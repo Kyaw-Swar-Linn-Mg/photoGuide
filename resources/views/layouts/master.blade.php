@@ -12,7 +12,12 @@
     <link rel="stylesheet" href="{{asset('bower_components/font-awesome/css/font-awesome.min.css')}}">
     <!-- Ionicons -->
     <link rel="stylesheet" href="{{asset('bower_components/Ionicons/css/ionicons.min.css')}}">
-    <!-- Theme style -->
+
+
+    <link rel="stylesheet" href="{{asset('bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css')}}">
+
+
+<!-- Theme style -->
     <link rel="stylesheet" href="{{asset('dist/css/AdminLTE.css')}}">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
@@ -44,17 +49,43 @@
 <script src="{{asset('dist/js/adminlte.min.js')}}"></script>
 
 <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+
 <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+
+<script src="{{asset('bower_components/datatables.net/js/jquery.dataTables.min.js')}}"></script>
+
+<script src="{{asset('bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
 <script>
     $(function ()
     {
-        $('#bookTable').dataTable();
+        $("#dataTable").dataTable();
     })
 </script>
 
 <script>
     $(function () {
         $(".alert").fadeOut(2500);
+
+        // $(".uploadImageFile").change(function () {
+        //    readImageURL(this);
+        // });
+        //
+        // function readImageURL(input) {
+        //
+        //     if(input.files && input.files[0]){
+        //
+        //         var reader = new FileReader();
+        //
+        //         reader.onload = function (e) {
+        //
+        //             $(".uploadImage").attr('src',e.target.result);
+        //         }
+        //
+        //         reader.readAsDataURL(input.files[0]);
+        //
+        //     }
+        //
+        // }
     });
 </script>
 

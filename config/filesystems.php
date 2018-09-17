@@ -48,10 +48,6 @@ return [
             'root' => storage_path('app'),
         ],
 
-        'book_cover' => [
-            'driver' => 'local',
-            'root' => storage_path('book_cover'),
-        ],
 
         'public' => [
             'driver' => 'local',

@@ -13,8 +13,12 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="{{ route('book_table') }}"><i class="fa fa-table"></i> Book Table</a></li>
-                    <li class="active"><a href="{{ route('book_transaction') }}"><i class="fa fa-table"></i>Book Transaction Table </a> </li>
+                    <li class="active"><a href="{{ route('basic_photo') }}"><i class="fa fa-photo"></i>Basic Photography </a></li>
+                    <li class="active"><a href="{{ route('landscape_photo') }}"><i class="fa fa-photo"></i>Landscape Photography </a> </li>
+                    <li class="active"><a href="{{ route('portrait_photo') }}"><i class="fa fa-photo"></i>Portrait Photography </a> </li>
+                    <li class="active"><a href="{{ route('category') }}"><i class="fa fa-list"></i>Create Category </a> </li>
+                    <li class="active"><a href="{{ route('post') }}"><i class="fa fa-upload"></i>Create Post </a> </li>
+                    <li class="active"><a href="{{ route('post_table') }}"><i class="fa fa-table"></i>Post Table</a> </li>
                 </ul>
             </li>
 

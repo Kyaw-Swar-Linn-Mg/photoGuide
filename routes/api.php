@@ -16,3 +16,19 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// api for basic photography
+
+Route::get('/basic_photography','BasicPhotographyController@index');
+
+// api for landscape photography
+
+Route::get('/landscape_photography','LandscapePhotographyController@index');
+
+// api for portrait_photography
+
+Route::get('/portrait_photography','PortraitPhotographyController@index');
+
+// api for category and post
+
+Route::get('/post','PostController@index');
